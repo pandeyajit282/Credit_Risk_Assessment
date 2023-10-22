@@ -13,7 +13,18 @@ The dataset was taken from kaggle, and it contains following features
 - Intent: Purpose of the loan (e.g., education, home improvement).
 - Amount: Loan amount applied for.
 - Rate: Interest rate on the loan.
-- Status: Loan approval status (Fully Paid, Charged Off, Current).
+- Status: Loan approval status.
 - Percent_Income: Loan amount as a percentage of income.
 - Default: Whether the applicant has defaulted on a loan previously (Yes, No).
 - Cred_Length: Length of the applicant's credit history.
+
+# Data Preprocessing 
+
+- Handled missing values, outliers (IQR method) in the dataset and scaled the features using Min-max scaler.
+- Converted categorical variables into numerical representations for machine learning algorithms, used one hot encoding.
+- Handled imbalanced dataset and applied oversampling for it.
+
+# Model building 
+
+Tried multiple models like Logistic, KNN, Random forest, AdaBoost, and XGBoost. The random forest and XGBoost models had the highest accuracy.
+Also performed hyperparameter tuning for random forest since it was overfitting. at the end XGBoost was selected as the final model.
