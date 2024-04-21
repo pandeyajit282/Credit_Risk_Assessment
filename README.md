@@ -26,5 +26,5 @@ The dataset was taken from kaggle, and it contains following features
 
 ### Model building 
 
-Tried multiple models like Logistic, KNN, Random forest, AdaBoost, and XGBoost. The random forest and XGBoost models had the highest accuracy.
-Also performed hyperparameter tuning for random forest since it was overfitting. at the end XGBoost was selected as the final model.
+Tried multiple models like Logistic, KNN, Random forest, and AdaBoost. since the data is not imbalanced, therefore used the accuracy as the decision metric.
+The random forest model had the highest accuracy.
